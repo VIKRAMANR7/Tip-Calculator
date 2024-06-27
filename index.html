@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div
+      class="w-full min-h-screen bg-blue-500 flex justify-center items-center"
+    >
+      <div class="w-[500px] p-[40px] bg-white rounded-lg text-[20px]">
+        <div class="flex justify-between items-center">
+          <label for="billAmt">Bill</label>
+          <input
+            type="number"
+            value="0.00"
+            class="w-[120px] bg-purple-300 text-right outline-none font-bold"
+            id="billValue"
+          />
+        </div>
+        <div class="flex justify-between items-center py-[15px]">
+          <p>Tip</p>
+          <p class="font-bold tipAmt">$ 0</p>
+        </div>
+        <hr class="border-none h-[2px] bg-gray-300 text-gray-300" />
+        <div class="flex justify-between items-center pt-[15px] pb-[30px]">
+          <p>Total Amount</p>
+          <p class="font-bold totalAmt">$ 0</p>
+        </div>
+        <section>
+          <div class="flex justify-between items-center">
+            <label for="">Tip %</label>
+            <p class="font-bold tipPercentVal">0%</p>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            class="w-full slider"
+            id="tipSlider"
+            step="1"
+            value="0"
+          />
+        </section>
+        <section class="pt-[10px] pb-[40px]">
+          <div class="flex justify-between items-center">
+            <label>No of People</label>
+            <p class="font-bold people">0</p>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="10"
+            class="w-full slider"
+            id="peopleSlider"
+            step="1"
+            value="0"
+          />
+        </section>
+        <section
+          class="w-full py-[25px] px-[10px] bg-purple-300 text-purple-800 rounded-md"
+        >
+          <div class="flex justify-between items-center pb-[15px]">
+            <p class="font-semibold">Tip Per Person</p>
+            <p class="font-bold tipPerson">$ 0.00</p>
+          </div>
+          <div class="flex justify-between items-center pb-[15px]">
+            <p class="font-semibold">Total Per Person</p>
+            <p class="font-bold totalPerson">$ 0.00</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
